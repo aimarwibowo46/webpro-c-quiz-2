@@ -8842,24 +8842,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Aimar W\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Dan\\Documents\\GitHub\\webpro-c-quiz-2\\IntegraKawe\\IntegraKawe.csproj",
+      "projectUniqueName": "C:\\Users\\Aimar W\\OneDrive\\Dokumen\\Temp\\webpro-c-quiz-2\\IntegraKawe\\IntegraKawe.csproj",
       "projectName": "IntegraKawe",
-      "projectPath": "D:\\Users\\Dan\\Documents\\GitHub\\webpro-c-quiz-2\\IntegraKawe\\IntegraKawe.csproj",
-      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Dan\\Documents\\GitHub\\webpro-c-quiz-2\\IntegraKawe\\obj\\",
+      "projectPath": "C:\\Users\\Aimar W\\OneDrive\\Dokumen\\Temp\\webpro-c-quiz-2\\IntegraKawe\\IntegraKawe.csproj",
+      "packagesPath": "C:\\Users\\Aimar W\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aimar W\\OneDrive\\Dokumen\\Temp\\webpro-c-quiz-2\\IntegraKawe\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Aimar W\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8922,6 +8917,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.21, 3.1.21]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8930,7 +8943,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
