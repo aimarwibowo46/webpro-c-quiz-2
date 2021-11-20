@@ -7,6 +7,15 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+/*.navbar-nav > li {
+    margin-left: 15px;
+    margin-right: 15px;
+}*/
+
+.buttonAction a {
+    width: 70px;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
