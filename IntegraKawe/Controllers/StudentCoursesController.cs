@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IntegraKawe.Data;
 using IntegraKawe.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IntegraKawe.Controllers
 {
@@ -47,6 +48,7 @@ namespace IntegraKawe.Controllers
         }
 
         // GET: StudentCourses/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["CourseId"] = new SelectList(_context.Course, "Id", "Id");
@@ -59,6 +61,7 @@ namespace IntegraKawe.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Id,StudentId,CourseId")] StudentCourse studentCourse)
         {
             if (ModelState.IsValid)
@@ -73,6 +76,7 @@ namespace IntegraKawe.Controllers
         }
 
         // GET: StudentCourses/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -95,6 +99,7 @@ namespace IntegraKawe.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Id,StudentId,CourseId")] StudentCourse studentCourse)
         {
             if (id != studentCourse.Id)
@@ -128,6 +133,7 @@ namespace IntegraKawe.Controllers
         }
 
         // GET: StudentCourses/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -150,6 +156,7 @@ namespace IntegraKawe.Controllers
         // POST: StudentCourses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var studentCourse = await _context.StudentCourse.FindAsync(id);
