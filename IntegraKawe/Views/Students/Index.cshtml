@@ -4,11 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Student List</h1>
+<br />
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+        &nbsp;Add New Student
+    </a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -49,9 +57,9 @@
                 @Html.DisplayFor(modelItem => item.Batch)
             </td>
             <td class="buttonAction">
-                <a class="btn btn-primary" role="button" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
-                <a class="btn btn-success" role="button" asp-action="Details" asp-route-id="@item.Id">Details</a> 
-                <a class="btn btn-danger" role="button" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-primary mb-2" role="button" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                <a class="btn btn-success mb-2" role="button" asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                <a class="btn btn-danger mb-2" role="button" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
