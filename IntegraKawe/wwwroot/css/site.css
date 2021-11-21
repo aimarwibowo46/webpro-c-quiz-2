@@ -16,6 +16,10 @@ a.navbar-brand {
     width: 70px;
 }
 
+.buttonNav a, .buttonNav button {
+    width: 100px;
+}
+
 /* Provide sufficient contrast against white background */
 a {
     color: #0366d6;
